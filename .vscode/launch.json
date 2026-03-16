@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Bootup (Cortex-Debug)",
+      "cwd": "${workspaceFolder}/book/bootup",
+      "executable": "${workspaceFolder}/book/bootup/image.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "device": "STM32L412KB",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32l4x.cfg"
+      ]
+    }
+  ]
+}
